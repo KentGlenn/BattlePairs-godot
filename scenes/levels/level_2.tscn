@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvgf55r82m2h8"]
+
+[ext_resource type="PackedScene" uid="uid://botaklbao01nl" path="res://scenes/tile.tscn" id="1_j2425"]
+
+[node name="Level2" type="Node2D"]
+position = Vector2(99, 11)
+
+[node name="Tile1" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(175, 75)
+
+[node name="Tile2" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(65, 171)
+
+[node name="Tile3" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(284, 171)
+
+[node name="Tile4" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(162, 267)
+
+[node name="Tile5" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(760, 76)
+
+[node name="Tile6" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(653, 201)
+
+[node name="Tile7" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(856, 190)
+
+[node name="Tile8" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(760, 315)
+
+[node name="Tile9" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(175, 459)
+
+[node name="Tile10" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(98, 557)
+
+[node name="Tile11" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(285, 555)
+
+[node name="Tile12" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(176, 632)
+
+[node name="Tile13" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(761, 496)
+
+[node name="Tile14" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(690, 605)
+
+[node name="Tile15" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(874, 605)
+
+[node name="Tile16" parent="." instance=ExtResource("1_j2425")]
+position = Vector2(762, 675)

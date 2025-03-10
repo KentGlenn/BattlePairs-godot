@@ -1,0 +1,265 @@
+[gd_scene load_steps=11 format=3 uid="uid://b55irs4kausrq"]
+
+[ext_resource type="Script" uid="uid://d3o5fxyjgh57n" path="res://scripts/main/main.gd" id="1_b1x3f"]
+[ext_resource type="FontFile" uid="uid://b80ijoqhwhrir" path="res://fonts/Maximum Voltage.ttf" id="1_gov4d"]
+[ext_resource type="FontFile" uid="uid://d4ggy3ay8vctd" path="res://fonts/DS-DIGI.TTF" id="2_1l04a"]
+[ext_resource type="Texture2D" uid="uid://q467xj6fh07o" path="res://assets/main/bird_mag.png" id="2_pg7vo"]
+[ext_resource type="Script" uid="uid://c7khlgax3m3fy" path="res://scripts/main/play.gd" id="5_wc73m"]
+[ext_resource type="Texture2D" uid="uid://bmveir6oifwy0" path="res://assets/main/left_arror.png" id="5_xvgud"]
+[ext_resource type="Texture2D" uid="uid://chwcq88yhrui2" path="res://assets/themes/animal/animal_1.png" id="7_a8run"]
+[ext_resource type="Texture2D" uid="uid://dr62vcgdfwwui" path="res://assets/themes/letter/letter_1.png" id="8_ouso4"]
+[ext_resource type="Texture2D" uid="uid://dgwie230ihjud" path="res://assets/themes/snowflake/snowflake_1.png" id="9_blune"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ouso4"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_b1x3f")
+
+[node name="High Score" type="Label" parent="."]
+offset_left = 111.0
+offset_top = 571.0
+offset_right = 322.0
+offset_bottom = 615.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("1_gov4d")
+theme_override_font_sizes/font_size = 32
+text = "High Scores"
+horizontal_alignment = 1
+
+[node name="Easy" type="Label" parent="High Score"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 52.0
+offset_right = 100.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "Easy:"
+horizontal_alignment = 2
+
+[node name="Easy Points" type="Label" parent="High Score/Easy"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = -1.0
+offset_right = 170.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.423529, 0.788235, 0.368627, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "1000"
+horizontal_alignment = 2
+
+[node name="So so" type="Label" parent="High Score"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 103.0
+offset_right = 100.0
+offset_bottom = 136.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "So-so:"
+horizontal_alignment = 2
+
+[node name="So-so Points" type="Label" parent="High Score/So so"]
+layout_mode = 0
+offset_left = 112.0
+offset_right = 168.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.423529, 0.788235, 0.368627, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "500"
+horizontal_alignment = 2
+
+[node name="Hard" type="Label" parent="High Score"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 154.0
+offset_right = 98.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "Hard:"
+horizontal_alignment = 2
+
+[node name="Hard Points" type="Label" parent="High Score/Hard"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = -2.0
+offset_right = 170.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.423529, 0.788235, 0.368627, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "0"
+horizontal_alignment = 2
+
+[node name="Sound Effects" type="Label" parent="."]
+offset_left = 522.0
+offset_top = 575.0
+offset_right = 769.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("1_gov4d")
+theme_override_font_sizes/font_size = 32
+text = "Sound Effects"
+horizontal_alignment = 1
+
+[node name="offOnSoundToggle" type="CheckButton" parent="Sound Effects"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 46.0
+offset_right = 176.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.415686, 0.772549, 0.356863, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "Off"
+
+[node name="Music" type="Label" parent="."]
+offset_left = 588.0
+offset_top = 685.0
+offset_right = 690.0
+offset_bottom = 729.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("1_gov4d")
+theme_override_font_sizes/font_size = 32
+text = "Music"
+horizontal_alignment = 1
+
+[node name="offOnMusicToggle" type="CheckButton" parent="Music"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 45.0
+offset_right = 113.0
+offset_bottom = 87.0
+theme_override_colors/font_color = Color(0.403922, 0.72549, 0.352941, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "On"
+
+[node name="Theme" type="Label" parent="."]
+offset_left = 1007.0
+offset_top = 90.0
+offset_right = 1136.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("1_gov4d")
+theme_override_font_sizes/font_size = 32
+text = " Theme"
+
+[node name="Animal" type="Sprite2D" parent="Theme"]
+material = SubResource("ShaderMaterial_ouso4")
+position = Vector2(63, 107)
+texture = ExtResource("7_a8run")
+
+[node name="Letter" type="Sprite2D" parent="Theme"]
+position = Vector2(63, 217)
+texture = ExtResource("8_ouso4")
+
+[node name="Snowflake" type="Sprite2D" parent="Theme"]
+position = Vector2(63, 331)
+texture = ExtResource("9_blune")
+
+[node name="Timer" type="Timer" parent="Theme"]
+
+[node name="Choose Level" type="Label" parent="."]
+offset_left = 119.0
+offset_top = 216.0
+offset_right = 349.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("1_gov4d")
+theme_override_font_sizes/font_size = 32
+text = "Choose Level"
+horizontal_alignment = 1
+
+[node name="LeftArrow" type="Sprite2D" parent="Choose Level"]
+position = Vector2(191, 76)
+scale = Vector2(0.762295, 0.762295)
+texture = ExtResource("5_xvgud")
+
+[node name="Easy" type="Button" parent="Choose Level"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 53.0
+offset_right = 103.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "Easy:"
+flat = true
+alignment = 2
+
+[node name="So-so" type="Button" parent="Choose Level"]
+layout_mode = 0
+offset_left = -11.0
+offset_top = 106.0
+offset_right = 105.0
+offset_bottom = 149.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "So-so:"
+flat = true
+alignment = 2
+
+[node name="Hard" type="Button" parent="Choose Level"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 156.0
+offset_right = 101.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 32
+text = "Hard:"
+flat = true
+alignment = 2
+
+[node name="easyMark" type="Marker2D" parent="Choose Level"]
+position = Vector2(122, 76)
+
+[node name="sosoMark" type="Marker2D" parent="Choose Level"]
+position = Vector2(123, 131)
+
+[node name="hardMark" type="Marker2D" parent="Choose Level"]
+position = Vector2(120, 179)
+
+[node name="BirdMag" type="Sprite2D" parent="."]
+position = Vector2(1057, 689)
+texture = ExtResource("2_pg7vo")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 482.0
+offset_top = 306.0
+offset_right = 805.0
+offset_bottom = 462.0
+theme_override_colors/font_color = Color(0.415686, 0.772549, 0.356863, 1)
+theme_override_fonts/font = ExtResource("2_1l04a")
+theme_override_font_sizes/font_size = 120
+text = "Play!"
+flat = true
+script = ExtResource("5_wc73m")
+
+[node name="Logo" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 2.0
+offset_right = 784.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(0.415686, 0.772549, 0.356863, 1)
+theme_override_fonts/font = ExtResource("1_gov4d")
+theme_override_font_sizes/font_size = 128
+text = "BattlePairs"
+
+[connection signal="pressed" from="Choose Level/Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="Choose Level/So-so" to="." method="_on_soso_pressed"]
+[connection signal="pressed" from="Choose Level/Hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]

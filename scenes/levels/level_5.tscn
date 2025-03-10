@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://cssglp0uddirr"]
+
+[ext_resource type="PackedScene" uid="uid://botaklbao01nl" path="res://scenes/tile.tscn" id="1_r1vs7"]
+
+[node name="Level5" type="Node2D"]
+
+[node name="Tile1" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(73, 76)
+
+[node name="Tile2" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(333, 78)
+
+[node name="Tile3" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(646, 77)
+
+[node name="Tile4" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(871, 79)
+
+[node name="Tile5" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(1039, 80)
+
+[node name="Tile6" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(215, 237)
+
+[node name="Tile7" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(462, 239)
+
+[node name="Tile8" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(692, 226)
+
+[node name="Tile9" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(914, 225)
+
+[node name="Tile10" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(366, 414)
+
+[node name="Tile11" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(559, 411)
+
+[node name="Tile12" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(766, 398)
+
+[node name="Tile13" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(429, 553)
+
+[node name="Tile14" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(723, 554)
+
+[node name="Tile15" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(430, 708)
+
+[node name="Tile16" parent="." instance=ExtResource("1_r1vs7")]
+position = Vector2(728, 708)
