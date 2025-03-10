@@ -13,54 +13,6 @@ offset_top = 744.0
 offset_right = 137.0
 offset_bottom = 782.0
 
-[node name="Tile1" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(117, 97)
-
-[node name="Tile2" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(377, 94)
-
-[node name="Tile3" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(690, 93)
-
-[node name="Tile4" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(986, 93)
-
-[node name="Tile5" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(115, 238)
-
-[node name="Tile6" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(371, 252)
-
-[node name="Tile7" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(688, 241)
-
-[node name="Tile8" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(988, 240)
-
-[node name="Tile9" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(116, 416)
-
-[node name="Tile10" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(376, 427)
-
-[node name="Tile11" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(675, 427)
-
-[node name="Tile12" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(987, 428)
-
-[node name="Tile13" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(101, 588)
-
-[node name="Tile14" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(361, 599)
-
-[node name="Tile15" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(674, 599)
-
-[node name="Tile16" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(986, 599)
-
 [node name="Easy" type="Label" parent="."]
 offset_left = 474.0
 offset_top = 23.0
@@ -81,5 +33,105 @@ theme_override_colors/font_color = Color(0.423529, 0.788235, 0.368627, 1)
 theme_override_fonts/font = ExtResource("3_nsrm0")
 theme_override_font_sizes/font_size = 32
 text = "100"
+
+[node name="Tiles-a" type="Node" parent="."]
+
+[node name="Tile1a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(71, 100)
+
+[node name="Tile2a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(218, 100)
+
+[node name="Tile3a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(353, 101)
+
+[node name="Tile4a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(486, 102)
+
+[node name="Tile5a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(642, 100)
+
+[node name="Tile6a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(779, 100)
+
+[node name="Tile7a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(919, 100)
+
+[node name="Tile8a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(1055, 100)
+
+[node name="Tile9a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(72, 275)
+
+[node name="Tile10a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(219, 275)
+
+[node name="Tile11a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(363, 276)
+
+[node name="Tile12a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(487, 277)
+
+[node name="Tile13a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(643, 275)
+
+[node name="Tile14a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(779, 275)
+
+[node name="Tile15a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(919, 275)
+
+[node name="Tile16a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
+position = Vector2(1055, 275)
+
+[node name="Tiles-b" type="Node2D" parent="."]
+
+[node name="Tile1b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(73, 443)
+
+[node name="Tile2b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(220, 443)
+
+[node name="Tile3b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(355, 444)
+
+[node name="Tile4b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(488, 445)
+
+[node name="Tile5b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(644, 443)
+
+[node name="Tile6b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(781, 443)
+
+[node name="Tile7b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(921, 443)
+
+[node name="Tile8b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(1057, 443)
+
+[node name="Tile9b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(74, 618)
+
+[node name="Tile10b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(221, 618)
+
+[node name="Tile11b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(365, 619)
+
+[node name="Tile12b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(489, 620)
+
+[node name="Tile13b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(645, 618)
+
+[node name="Tile14b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(781, 618)
+
+[node name="Tile15b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(921, 618)
+
+[node name="Tile16b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
+position = Vector2(1057, 618)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

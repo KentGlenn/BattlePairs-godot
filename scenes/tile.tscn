@@ -14,3 +14,5 @@ flat = true
 [node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(49, 49)
 texture = ExtResource("1_3dk36")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
