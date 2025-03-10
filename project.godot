@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 [autoload]
 
 SceneSwitcher="*res://scripts/global/switch_to_scene.gd"
+TileUtils="*res://scripts/global/tile_utils.gd"
 
 [display]
 

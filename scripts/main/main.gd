@@ -27,13 +27,14 @@ func _ready():
 	_on_timer_timeout()
 	animateArrow()
 
-func getTexture(theme, index):
-	var texture = "res://assets/themes/%s/%s_%d.png"
-	return "res://assets/themes/{theme}/{name}_{index}.png".format({"theme": theme, "name": theme, "index": index})
-	
-func popInOutSprite(sprite, spriteName, texture):
+#func getTexture(theme, index):
+	#var texture = "res://assets/themes/%s/%s_%d.png"
+	#return "res://assets/themes/{theme}/{name}_{index}.png".format({"theme": theme, "name": theme, "index": index})
+	#
+func popInOutSprite(sprite, themeName, texture):
 	var tween = get_tree().create_tween().bind_node(self).set_ease(Tween.EASE_IN_OUT)
-	var newTexture = load(getTexture(spriteName, texture))
+	var newTexture = load(TileUtils.getThemeTextureForIndex(themeName, texture))
+	#var newTexture = load(getTexture(spriteName, texture))
 	tween.tween_property(sprite, "scale", Vector2(), 1)
 	tween.tween_property(sprite, "texture", newTexture, 0)
 	tween.tween_property(sprite, "scale", Vector2(1,1), .5)

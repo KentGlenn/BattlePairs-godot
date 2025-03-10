@@ -14,7 +14,7 @@ offset_right = 137.0
 offset_bottom = 782.0
 
 [node name="Tile1" parent="." instance=ExtResource("2_6iamk")]
-position = Vector2(117, 92)
+position = Vector2(117, 97)
 
 [node name="Tile2" parent="." instance=ExtResource("2_6iamk")]
 position = Vector2(377, 94)
