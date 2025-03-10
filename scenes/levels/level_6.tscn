@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://ojdktjvytuun"]
+
+[ext_resource type="PackedScene" uid="uid://botaklbao01nl" path="res://scenes/tile.tscn" id="1_gfuhv"]
+
+[node name="level_6" type="Node2D"]
+
+[node name="Tile1" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(64, 44)
+
+[node name="Tile2" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(104, 169)
+
+[node name="Tile3" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(172, 315)
+
+[node name="Tile4" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(214, 454)
+
+[node name="Tile5" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(284, 593)
+
+[node name="Tile6" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(345, 704)
+
+[node name="Tile7" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(584, 704)
+
+[node name="Tile8" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(774, 705)
+
+[node name="Tile9" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(942, 704)
+
+[node name="Tile10" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(956, 585)
+
+[node name="Tile11" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(978, 454)
+
+[node name="Tile12" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(999, 316)
+
+[node name="Tile13" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(1031, 158)
+
+[node name="Tile14" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(1025, 33)
+
+[node name="Tile15" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(493, 325)
+
+[node name="Tile16" parent="." instance=ExtResource("1_gfuhv")]
+position = Vector2(668, 335)
