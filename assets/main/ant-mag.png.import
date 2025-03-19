@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckx8bhdo6ejs7"
-path="res://.godot/imported/7.png-14215e81a5bc73a6406585ef1e4898b4.ctex"
+uid="uid://ddwh3wqgibl7l"
+path="res://.godot/imported/ant-mag.png-7a35f25b7e75f8bb28e0dfcc9fdd56d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/themes/fantasy/7.png"
-dest_files=["res://.godot/imported/7.png-14215e81a5bc73a6406585ef1e4898b4.ctex"]
+source_file="res://assets/main/ant-mag.png"
+dest_files=["res://.godot/imported/ant-mag.png-7a35f25b7e75f8bb28e0dfcc9fdd56d9.ctex"]
 
 [params]
 

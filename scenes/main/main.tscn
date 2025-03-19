@@ -3,23 +3,25 @@
 [ext_resource type="Script" uid="uid://d3o5fxyjgh57n" path="res://scripts/main/main.gd" id="1_b1x3f"]
 [ext_resource type="FontFile" uid="uid://b80ijoqhwhrir" path="res://fonts/Maximum Voltage.ttf" id="1_gov4d"]
 [ext_resource type="FontFile" uid="uid://d4ggy3ay8vctd" path="res://fonts/DS-DIGI.TTF" id="2_1l04a"]
-[ext_resource type="Texture2D" uid="uid://q467xj6fh07o" path="res://assets/main/bird_mag.png" id="2_pg7vo"]
 [ext_resource type="Texture2D" uid="uid://bic46i1pt8db5" path="res://assets/themes/animal/2.png" id="4_b1x3f"]
 [ext_resource type="Script" uid="uid://c7khlgax3m3fy" path="res://scripts/main/play.gd" id="5_wc73m"]
 [ext_resource type="Texture2D" uid="uid://bmveir6oifwy0" path="res://assets/main/left_arror.png" id="5_xvgud"]
-[ext_resource type="Texture2D" uid="uid://drwrnj220ellh" path="res://assets/themes/fantasy/1.png" id="8_ouso4"]
+[ext_resource type="Texture2D" uid="uid://ddwh3wqgibl7l" path="res://assets/main/ant-mag.png" id="9_b1x3f"]
 [ext_resource type="Texture2D" uid="uid://ckdka7l52dnqb" path="res://assets/themes/shapes/1.png" id="9_blune"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ouso4"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yyfjg"]
+load_path = "res://.godot/imported/1.png-a87457ce19bf9fccc631419964d60e1e.ctex"
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_b1x3f")
 
 [node name="High Score" type="Label" parent="."]
 offset_left = 112.0
-offset_top = 468.0
+offset_top = 470.0
 offset_right = 323.0
-offset_bottom = 512.0
+offset_bottom = 514.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("1_gov4d")
 theme_override_font_sizes/font_size = 32
@@ -29,9 +31,9 @@ horizontal_alignment = 1
 [node name="Easy" type="Label" parent="High Score"]
 layout_mode = 0
 offset_left = 10.0
-offset_top = 52.0
+offset_top = 63.0
 offset_right = 100.0
-offset_bottom = 89.0
+offset_bottom = 100.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("2_1l04a")
 theme_override_font_sizes/font_size = 32
@@ -53,9 +55,9 @@ horizontal_alignment = 2
 [node name="So so" type="Label" parent="High Score"]
 layout_mode = 0
 offset_left = 10.0
-offset_top = 103.0
+offset_top = 114.0
 offset_right = 100.0
-offset_bottom = 136.0
+offset_bottom = 147.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("2_1l04a")
 theme_override_font_sizes/font_size = 32
@@ -76,9 +78,9 @@ horizontal_alignment = 2
 [node name="Hard" type="Label" parent="High Score"]
 layout_mode = 0
 offset_left = 8.0
-offset_top = 154.0
+offset_top = 165.0
 offset_right = 98.0
-offset_bottom = 191.0
+offset_bottom = 202.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("2_1l04a")
 theme_override_font_sizes/font_size = 32
@@ -99,9 +101,9 @@ horizontal_alignment = 2
 
 [node name="Sound Effects" type="Label" parent="."]
 offset_left = 523.0
-offset_top = 472.0
+offset_top = 470.0
 offset_right = 770.0
-offset_bottom = 516.0
+offset_bottom = 514.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("1_gov4d")
 theme_override_font_sizes/font_size = 32
@@ -111,9 +113,9 @@ horizontal_alignment = 1
 [node name="offOnSoundToggle" type="CheckButton" parent="Sound Effects"]
 layout_mode = 0
 offset_left = 62.0
-offset_top = 46.0
+offset_top = 52.0
 offset_right = 176.0
-offset_bottom = 88.0
+offset_bottom = 94.0
 theme_override_colors/font_color = Color(0.415686, 0.772549, 0.356863, 1)
 theme_override_fonts/font = ExtResource("2_1l04a")
 theme_override_font_sizes/font_size = 32
@@ -121,9 +123,9 @@ text = "Off"
 
 [node name="Music" type="Label" parent="."]
 offset_left = 589.0
-offset_top = 582.0
+offset_top = 588.0
 offset_right = 691.0
-offset_bottom = 626.0
+offset_bottom = 632.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("1_gov4d")
 theme_override_font_sizes/font_size = 32
@@ -142,10 +144,10 @@ theme_override_font_sizes/font_size = 32
 text = "On"
 
 [node name="Theme" type="Label" parent="."]
-offset_left = 1041.0
-offset_top = 26.0
-offset_right = 1170.0
-offset_bottom = 70.0
+offset_left = 984.0
+offset_top = 470.0
+offset_right = 1113.0
+offset_bottom = 514.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("1_gov4d")
 theme_override_font_sizes/font_size = 32
@@ -153,15 +155,15 @@ text = " Theme"
 
 [node name="Animal" type="Sprite2D" parent="Theme"]
 material = SubResource("ShaderMaterial_ouso4")
-position = Vector2(63, 110)
+position = Vector2(-68, 130)
 texture = ExtResource("4_b1x3f")
 
 [node name="Fantasy" type="Sprite2D" parent="Theme"]
-position = Vector2(63, 234)
-texture = ExtResource("8_ouso4")
+position = Vector2(69, 130)
+texture = SubResource("CompressedTexture2D_yyfjg")
 
 [node name="Shapes" type="Sprite2D" parent="Theme"]
-position = Vector2(63, 357)
+position = Vector2(209, 130)
 texture = ExtResource("9_blune")
 
 [node name="Timer" type="Timer" parent="Theme"]
@@ -233,10 +235,6 @@ position = Vector2(123, 131)
 [node name="hardMark" type="Marker2D" parent="Choose Level"]
 position = Vector2(120, 179)
 
-[node name="BirdMag" type="Sprite2D" parent="."]
-position = Vector2(1122, 591)
-texture = ExtResource("2_pg7vo")
-
 [node name="Play" type="Button" parent="."]
 offset_left = 504.0
 offset_top = 246.0
@@ -258,6 +256,10 @@ theme_override_colors/font_color = Color(0.415686, 0.772549, 0.356863, 1)
 theme_override_fonts/font = ExtResource("1_gov4d")
 theme_override_font_sizes/font_size = 128
 text = "BattlePairs"
+
+[node name="Ant-mag" type="Sprite2D" parent="."]
+position = Vector2(1086, 159)
+texture = ExtResource("9_b1x3f")
 
 [connection signal="pressed" from="Choose Level/Easy" to="." method="_on_easy_pressed"]
 [connection signal="pressed" from="Choose Level/So-so" to="." method="_on_soso_pressed"]
