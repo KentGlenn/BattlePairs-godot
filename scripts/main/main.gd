@@ -2,8 +2,8 @@ extends Node2D
 
 @onready var my_timer = $Theme/Timer
 @onready var animal = $Theme/Animal
-@onready var letter = $Theme/Letter
-@onready var snowflake = $Theme/Snowflake
+@onready var fantasy = $Theme/Fantasy
+@onready var shapes = $Theme/Shapes
 @onready var leftArrow = $"Choose Level/LeftArrow"
 @onready var leftArrowOriginalPos = leftArrow.position
 @onready var levelSoSo = $"Choose Level/So-so"
@@ -12,11 +12,18 @@ extends Node2D
 @onready var sosoMark = $"Choose Level/sosoMark"
 @onready var hardMark = $"Choose Level/hardMark"
 
+var bg_music := AudioStreamPlayer.new()
+
 const maxTextures = 16
 const maxThemes = 3
 
 func _ready():
 	randomize()
+	
+	bg_music.stream = load("res://assets/audio/80s Odyssey Main.wav")
+	bg_music.autoplay = true
+	bg_music.volume_db = -15
+	add_child(bg_music)
 	
 	# Create timer and start
 	my_timer.timeout.connect(_on_timer_timeout)
@@ -27,10 +34,6 @@ func _ready():
 	_on_timer_timeout()
 	animateArrow()
 
-#func getTexture(theme, index):
-	#var texture = "res://assets/themes/%s/%s_%d.png"
-	#return "res://assets/themes/{theme}/{name}_{index}.png".format({"theme": theme, "name": theme, "index": index})
-	#
 func popInOutSprite(sprite, themeName, texture):
 	var tween = get_tree().create_tween().bind_node(self).set_ease(Tween.EASE_IN_OUT)
 	var newTexture = load(TileUtils.getThemeTextureForIndex(themeName, texture))
@@ -56,8 +59,8 @@ func _on_timer_timeout() -> void:
 	var rndTheme = (randi() % maxThemes)+1
 	match rndTheme:
 		1: popInOutSprite(animal, "animal", rndTexture)
-		2: popInOutSprite(letter, "letter", rndTexture)
-		3: popInOutSprite(snowflake, "snowflake", rndTexture)
+		2: popInOutSprite(fantasy, "fantasy", rndTexture)
+		3: popInOutSprite(shapes, "shapes", rndTexture)
 	animateArrow()
 
 

@@ -1,22 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://iumu3mo5iw6d"]
+[gd_scene load_steps=5 format=3 uid="uid://iumu3mo5iw6d"]
 
 [ext_resource type="Script" uid="uid://bqonemwb1tkx2" path="res://scripts/levels/level_1/level_1.gd" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://botaklbao01nl" path="res://scenes/tile.tscn" id="2_6iamk"]
 [ext_resource type="FontFile" uid="uid://d4ggy3ay8vctd" path="res://fonts/DS-DIGI.TTF" id="3_nsrm0"]
+[ext_resource type="AudioStream" uid="uid://bc81hlvihbx3" path="res://assets/audio/Open Inventory Bag A.wav" id="4_x42e6"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_ksju7")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 30.0
-offset_top = 744.0
-offset_right = 137.0
-offset_bottom = 782.0
-
-[node name="Easy" type="Label" parent="."]
-offset_left = 474.0
+offset_left = 28.0
 offset_top = 23.0
-offset_right = 564.0
+offset_right = 135.0
+offset_bottom = 61.0
+
+[node name="Score" type="Label" parent="."]
+offset_left = 421.0
+offset_top = 23.0
+offset_right = 511.0
 offset_bottom = 60.0
 theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
 theme_override_fonts/font = ExtResource("3_nsrm0")
@@ -24,7 +25,7 @@ theme_override_font_sizes/font_size = 32
 text = "Score:"
 horizontal_alignment = 2
 
-[node name="Easy Points" type="Label" parent="Easy"]
+[node name="Points" type="Label" parent="Score"]
 layout_mode = 0
 offset_left = 113.0
 offset_right = 169.0
@@ -34,104 +35,128 @@ theme_override_fonts/font = ExtResource("3_nsrm0")
 theme_override_font_sizes/font_size = 32
 text = "100"
 
+[node name="Time" type="Label" parent="."]
+offset_left = 629.0
+offset_top = 23.0
+offset_right = 719.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.988235, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("3_nsrm0")
+theme_override_font_sizes/font_size = 32
+text = "Time:"
+horizontal_alignment = 2
+
+[node name="Elapsed" type="Label" parent="Time"]
+layout_mode = 0
+offset_left = 113.0
+offset_right = 169.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.423529, 0.788235, 0.368627, 1)
+theme_override_fonts/font = ExtResource("3_nsrm0")
+theme_override_font_sizes/font_size = 32
+text = "3:46"
+
 [node name="Tiles-a" type="Node" parent="."]
 
 [node name="Tile1a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(71, 100)
+position = Vector2(60, 82)
 
 [node name="Tile2a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(218, 100)
+position = Vector2(200, 84)
 
 [node name="Tile3a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(353, 101)
+position = Vector2(360, 83)
 
 [node name="Tile4a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(486, 102)
+position = Vector2(515, 80)
 
 [node name="Tile5a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(642, 100)
+position = Vector2(684, 86)
 
 [node name="Tile6a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(779, 100)
+position = Vector2(834, 83)
 
 [node name="Tile7a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(919, 100)
+position = Vector2(990, 85)
 
 [node name="Tile8a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(1055, 100)
+position = Vector2(1157, 83)
 
 [node name="Tile9a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(72, 275)
+position = Vector2(60, 257)
 
 [node name="Tile10a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(219, 275)
+position = Vector2(200, 259)
 
 [node name="Tile11a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(363, 276)
+position = Vector2(360, 258)
 
 [node name="Tile12a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(487, 277)
+position = Vector2(515, 255)
 
 [node name="Tile13a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(643, 275)
+position = Vector2(685, 261)
 
 [node name="Tile14a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(779, 275)
+position = Vector2(834, 258)
 
 [node name="Tile15a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(919, 275)
+position = Vector2(990, 260)
 
 [node name="Tile16a" parent="Tiles-a" instance=ExtResource("2_6iamk")]
-position = Vector2(1055, 275)
+position = Vector2(1157, 258)
 
 [node name="Tiles-b" type="Node2D" parent="."]
 
 [node name="Tile1b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(73, 443)
+position = Vector2(60, 425)
 
 [node name="Tile2b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(220, 443)
+position = Vector2(200, 427)
 
 [node name="Tile3b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(355, 444)
+position = Vector2(360, 426)
 
 [node name="Tile4b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(488, 445)
+position = Vector2(515, 423)
 
 [node name="Tile5b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(644, 443)
+position = Vector2(686, 429)
 
 [node name="Tile6b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(781, 443)
+position = Vector2(836, 426)
 
 [node name="Tile7b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(921, 443)
+position = Vector2(992, 428)
 
 [node name="Tile8b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(1057, 443)
+position = Vector2(1157, 426)
 
 [node name="Tile9b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(74, 618)
+position = Vector2(60, 600)
 
 [node name="Tile10b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(221, 618)
+position = Vector2(200, 602)
 
 [node name="Tile11b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(365, 619)
+position = Vector2(360, 601)
 
 [node name="Tile12b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(489, 620)
+position = Vector2(515, 598)
 
 [node name="Tile13b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(645, 618)
+position = Vector2(687, 604)
 
 [node name="Tile14b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(781, 618)
+position = Vector2(836, 601)
 
 [node name="Tile15b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(921, 618)
+position = Vector2(992, 603)
 
 [node name="Tile16b" parent="Tiles-b" instance=ExtResource("2_6iamk")]
-position = Vector2(1057, 618)
+position = Vector2(1157, 601)
+
+[node name="BagOpenAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_x42e6")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
